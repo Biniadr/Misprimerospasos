@@ -1,0 +1,145 @@
+
+body {
+  margin: 0;
+  background: #050504;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Allura", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+
+header {
+  position: relative;
+  overflow: hidden;
+  height: 60vh; /* o la altura que prefieras */
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  object-fit: cover;
+}
+
+header .overlay {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  padding: 60px 20px;
+}
+
+
+
+.logo {
+  width: 300px;
+  position: center;
+  top: 20px;
+  left: 20px;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-top: 60px;
+}
+
+.titulo2{
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+}
+
+.btn {
+  background-color: #d67b00;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s;
+ justify-content: center;
+}
+
+.btn:hover {
+  background-color: #00a364;
+}
+
+section {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+#servicios{
+    display: grid;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 35px;
+  padding-top: 20px;
+}
+
+#titulo1{
+    margin-bottom: 10px;
+}
+
+
+.galeria {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.galeria img {
+  width: 280px;
+  border-radius: 15px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+#comentarios .comentario {
+  background: #070303;
+  padding: 5px;
+  border-left: 4px solid #d67b00;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+#redes-sociales {
+  text-align: center;
+  padding: 20px;
+}
+
+#redes-sociales a {
+  font-size: 2rem;
+  margin: 0 10px;
+  color: #d67b00;
+  transition: color 0.3s;
+}
+
+#redes-sociales a:hover {
+  color: #00a323;
+}
+
+footer {
+  background: #d67b00;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
