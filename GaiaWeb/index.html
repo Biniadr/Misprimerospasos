@@ -18,8 +18,8 @@
 <source src="video/3625-172488382_tiny.mp4" type="video/mp4">
   </video>
   <div class="overlay">
-    <img src="imagenes/logo.jpg" alt="Logo" class="logo"/>
-    <h1>Servicio de Catering</h1>
+    <img src="imagenes/logo2.jpg" alt="Logo" class="logo"/>
+    <h1 id="renegar">Servicio de Catering</h1>
     <a href="#contacto" class="btn">Solicitar presupuesto</a>
   </div>
 </header>
@@ -27,7 +27,7 @@
 
   <section id="sobre-nosotros">
     <h2 class="titulo2"><u>¿Porque elegirnos?</u></h2>
-    <p>Ofrecemos experiencias culinarias inolvidables para todo tipo de eventos.</p>
+    <p>Te acompañamos con atención personalizada, un equipo humano preparado y toda la dedicación que tu evento merece.</p>
   </section>
 
   <section id="servicios">
@@ -35,16 +35,17 @@
     <ul>
       <li>Catering personalizado</li>
       <li>Mesas dulces y saladas</li>
-      <li>Decoración temática</li>
+      <li>Asesoría completa y presupuestos personalizados sin cargo</li>
+      <li>Consultar por plataforma Giratoria,Toro mecanico, Dj,etc (incluidos o no en el Servicio)</li>
     </ul>
   </section>
 
   <section id="galeria">
     <h2 class="titulo2"><u>Nosotros</u></h2>
     <div class="galeria">
-      <img src="imagenes/imagen1.jpg" alt="Plato 1">
-      <img src="imagenes/imagen3.jpg" alt="Plato 2">
-      <img src="imagenes/imagen2.jpg" alt="Plato 1">
+      <img src="imagenes/imagen5.jpg" alt="Plato 1">
+      <img src="imagenes/grupo.jpg" alt="Plato 2">
+      <img src="imagenes/imagen6.jpg" alt="Plato 1">
     </div>
   </section>
 
@@ -59,11 +60,20 @@
 </section>
 
 
-  <section id="redes-sociales">
+  <section class="redes-sociales">
     <h2 id="contacto">Contactanos!!</h2>
-    <a href="https://wa.me/549XXXXXXXXX" target="_blank"><i class="fab fa-whatsapp"></i></a>
-    <a href="https://www.instagram.com/tuusuario" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="mailto:correo@ejemplo.com"><i class="fas fa-envelope"></i></a>
+    <div>
+    <a href="https://www.instagram.com/gaia.eventoss?igsh=MW0ybHFoYnNjbmg1Zw== " target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="mailto:amibertola@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+    <div class="whatsapp-menu">
+  <button class="btn-wsp" onclick="toggleWspMenu()">📱 Contactar por WhatsApp</button>
+  <div id="wsp-menu" class="wsp-hidden">
+    <a href="https://wa.me/5493417184266?text=Hola%2C%20quiero%20consultar%20por%20el%20servicio%20de%20catering" target="_blank">💬 Ami</a>
+    <a href="https://wa.me/5493413590765?text=Hola%2C%20me%20interesa%20pedir%20presupuesto%20para%20un%20evento" target="_blank">💬 Lautaro</a>
+  </div>
+</div>
+
   </section>
 
   <footer>
@@ -73,8 +83,27 @@
 
 
 
+<script>
+  function toggleWspMenu() {
+    const menu = document.getElementById("wsp-menu");
+    menu.classList.toggle("wsp-hidden");
+  }
+
+  // Cierra el menú si se hace clic fuera de él
+  document.addEventListener("click", function (event) {
+    const menu = document.getElementById("wsp-menu");
+    const button = document.querySelector(".btn-wsp");
+    const isClickInside = menu.contains(event.target) || button.contains(event.target);
+
+    if (!isClickInside) {
+      menu.classList.add("wsp-hidden");
+    }
+  });
+</script>
 
   <script src="script.js"></script>
 
 </body>
 </html>
+
+

@@ -147,6 +147,9 @@
       color: var(--primary-color);
       text-decoration: none;
     }
+    .contacto a :hover{
+      background: #6a39f0;
+    }
 
     footer {
       background-color: #023047;
@@ -192,9 +195,18 @@
 }
 
 .btn-primary:hover {
-  background-color: #005f86;
+  background-color: #240086;
 }
 .contacto a {
   font-size: 2rem;
 }
 
+#marcacion{
+  font-size: 20px;
+}
+
+#marcacion :hover{
+font-size: 23px;
+color: rgba(255, 0, 0, 0.527);
+
+}
