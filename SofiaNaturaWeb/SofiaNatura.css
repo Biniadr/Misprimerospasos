@@ -1,0 +1,238 @@
+:root {
+  --verde-suave: #d67eb9;
+  --verde-oscuro: #4a7c59;
+  --texto: #333;
+  --bg: #d183d8;
+  --acento: #85bfa0;
+  --font: 'Quicksand', sans-serif;
+}
+
+* {
+  text-transform: capitalize;
+ 
+}
+
+
+body {
+  background-image: url('https://production.na01.natura.com/on/demandware.static/-/Sites-NatPeru-Library/default/dw2a8e43ca/landing-pages/Todo-Dia-Cabellos/35449_-_LP-TodoDia-Cabellos_(20-feb-2025)/1_Main-banner-category/video-top-generico-desde-20-feb/LANDING_MainBanner-Category_DESK_PORTADA.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: scroll;
+ 
+}
+
+
+header {
+  width: 300px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #f0b364;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-style: normal;
+  font-size: 25px;
+  text-align: center;
+}
+
+ 
+  .titulo{
+    margin-top: 0px;
+    margin-bottom: 10px;
+     display: flex;
+    justify-content: center;
+      align-items: center;
+      font-size: 20px;
+  }
+
+  
+nav a {
+  color: white;
+  text-decoration: none;
+  font-style: italic;
+}
+
+nav :hover{
+  color: blue;
+}
+
+.contenido {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 12px;
+  max-width: 300px;
+  margin: auto;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+
+
+.seccion {
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.medio{
+  padding-top: 0px;
+  align-content: center;
+}
+
+
+
+.seccion.contacto{
+  margin-bottom: 10px;
+}
+
+
+#BIENVE{
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 25px;
+}
+
+
+
+.btn {
+  display:inline-flex;
+  justify-content: center;
+   margin: 0.8rem auto 0 auto;
+  padding: 0.5rem 1rem;
+  background-color: var(--verde-oscuro);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.btn:hover{
+  color: blue;
+}
+
+.redes-horizontal {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.red {
+  width: 55px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.6rem;
+  color: white;
+  transition: transform 0.2s ease, opacity 0.3s ease;
+  text-decoration: none;
+}
+
+.red:hover {
+  transform: scale(1.15);
+  opacity: 0.9;
+}
+
+/* Colores oficiales de fondo */
+.red.whatsapp  { background-color: #25D366; }
+.red.instagram { background-color: #E1306C; }
+.red.tiktok    { background-color: #000000; }
+
+.red.facebook{
+  text-align: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 55px;
+  height: 50px;
+  display: flex;
+  background-color: blue;
+}
+
+#renegar{
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+#renegar2{
+  margin-top: 15px;
+}
+
+#renegar3{
+  text-align: center;
+  align-items: center;
+  font-size: 23px;
+  margin-top: 0px;
+}
+
+#conexion{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+
+  .categorias {
+     display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 5px;
+  flex-wrap:wrap-reverse;
+  }
+
+  
+.tarjeta {
+  background-color: rgb(222, 224, 98);
+  border: 1px solid var(--verde-suave);
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+  
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+  border-color: #000000;
+  background: white;
+}
+
+.tarjeta h3 {
+  color: var(--verde-oscuro);
+  margin-bottom: 0.5rem;
+}
+
+.tarjeta p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+footer{ 
+  padding: 13px;
+  color: white;
+  background: orange;
+  font-size: 18px;
+  border-radius: 15%;
+}
