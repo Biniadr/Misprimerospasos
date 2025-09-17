@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    
+
+       
+
+        <div class="botones">
+
+             <input type="text" id="pantalla" readonly />
+
+            <div class="fila">
+            <button onclick="agregar('7')">7</button>
+            <button onclick="agregar('8')">8</button>
+            <button onclick="agregar('9')">9</button>
+            </div>
+
+            <div class="fila">
+            <button onclick="agregar('4')">4</button>
+            <button onclick="agregar('5')">5</button>
+            <button onclick="agregar('6')">6</button>
+            </div>
+
+            <div class="fila">
+            <button onclick="agregar('1')">1</button>
+            <button onclick="agregar('2')">2</button>
+            <button onclick="agregar('3')">3</button>
+            </div>
+                        
+        <div class="fila">
+            <button onclick="agregar('+')">+</button>
+            <button onclick="agregar('-')">-</button>
+            <button onclick="calcular()">=</button>
+            </div>
+
+            <button onclick="limpiar()">C</button>
+            
+        </div>
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+/* Fondo general */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Contenedor principal */
+.botones {
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+  width: 260px;
+}
+
+/* Pantalla */
+#pantalla {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  text-align: right;
+  font-size: 2em;
+  padding: 10px;
+  background: #333;
+  color: #fff;
+  box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Filas */
+.fila {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/* Botones generales */
+button {
+  flex: 1;
+  margin: 5px;
+  padding: 15px;
+  font-size: 1.3em;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #2d2d2d;
+  color: white;
+  transition: 0.2s;
+}
+
+/* Hover */
+button:hover {
+  background: #444;
+}
+
+/* Botones especiales */
+button[onclick*="+"] , 
+button[onclick*="-"], 
+button[onclick*="*"], 
+button[onclick*="/"] {
+  background: #f39c12;
+}
+
+button[onclick*="+"]:hover , 
+button[onclick*="-"]:hover, 
+button[onclick*="*"]:hover, 
+button[onclick*="/"]:hover {
+  background: #e67e22;
+}
+
+button[onclick*="calcular"] {
+  background: #27ae60;
+}
+
+button[onclick*="calcular"]:hover {
+  background: #2ecc71;
+}
+
+button[onclick*="limpiar"] {
+  background: #c0392b;
+  width: 100%;
+}
+
+button[onclick*="limpiar"]:hover {
+  background: #e74c3c;
+}

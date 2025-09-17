@@ -1,6 +1,9 @@
-.centrado{
-    text-align: center;
-}
+  .centrado{
+      text-align: center;
+      align-items: center;
+      list-style-type:none;
+    padding-left: 0;
+  }
 
 
 * {
@@ -16,90 +19,43 @@ body {
   font-weight: 400;
   font-style: normal;
   color: #333;
+  background-color: rgb(254, 189, 89);
 }
 
 .logo-full {
-  width: 100%;
-  display: block;
+  width: 60%;
+  display:block;
+  margin: 0 auto;
+      
 }
 
 /* NAV */
 nav {
+  color: white;
   background-color: #222;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
-  gap: 2rem;
+.lista{
+  list-style-type: none;
+  font-size: 25px;
 }
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* HERO CON IMAGEN DE FONDO */
-.hero {
-  background-image: url('imagenes/fondo-hero.jpg'); /* reemplazá por tu imagen */
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
-}
-
-.hero-contenido h1 {
-  font-size: 2.5rem;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 1rem;
-  border-radius: 8px;
-}
-
-.hero-contenido p {
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 0.5rem;
-  border-radius: 6px;
-  margin-top: 0.5rem;
-}
-
-/* CARRUSEL */
-.carousel-item img {
-  height: 400px;
-  object-fit: cover;
-}
-
 /* CONTACTO */
 .contacto {
-  background-color: #f4f4f4;
+  background-color: #257E74;
   text-align: center;
   padding: 2rem;
 }
 
-.btn-whatsapp {
-  background-color: #25d366;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 5px;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 1rem;
-}
 
 /* FOOTER */
 footer {
   background-color: #222;
   color: white;
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
   margin-top: 2rem;
 }
+
 
 
     
